@@ -47,11 +47,6 @@ npm install
 npm run dev
 ```
 
-```bash
-npx hardhat compile
-npx hardhat run ./scripts/deploy.js --network localhost
-```
-
 ## Key Features
 
 - **P2P Energy Trading** with dynamic order-matching and geohash-based pricing.
