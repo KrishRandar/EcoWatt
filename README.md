@@ -103,7 +103,8 @@ npx hardhat verify --network zkSyncSepolia YOUR_CONTRACT_ADDRESS
 6. **User Dashboard**
    - Track active & completed trades, pending buy orders, and trade history.
 
-![image alt]('Screenshot%202025-02-04%20220610.png')
+![Screenshot 2025-02-04 220610](https://github.com/user-attachments/assets/c02cf0b6-6672-46f7-b7ca-2f40451d1d6e)
+
 
 ---
 
@@ -202,7 +203,8 @@ Edit
 Each buyer must configure their ESP32 device to connect to Wi-Fi and serve battery data.
 The description for user end configuring the ESP32 device is provided in the next section.
 
-![image alt](https://github.com/aadityas024/kriti/blob/c40b2aa97ccb092193d45842b29bdaff9922ac07/Screenshot%202025-02-04%20220635.png)
+![Screenshot 2025-02-04 220635](https://github.com/user-attachments/assets/411838d8-cc1f-49aa-948c-092fa45abdfe)
+
 
 ---
 
