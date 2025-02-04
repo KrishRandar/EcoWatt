@@ -49,11 +49,7 @@ npm run dev
 
 ```bash
 npx hardhat compile
-npx hardhat deploy-zksync --network zkSyncSepolia
-```
-
-```bash
-npx hardhat verify --network zkSyncSepolia YOUR_CONTRACT_ADDRESS
+npx hardhat run ./scripts/deploy.js --network localhost
 ```
 
 ## Key Features
