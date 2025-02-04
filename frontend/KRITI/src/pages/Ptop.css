@@ -1,0 +1,67 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+.energy-trading {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    min-height: 80vh;
+  }
+  
+  .balance-display h3 {
+    color: #5e15e8;
+    font-size: 20px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .trade-section {
+    margin-bottom: 20px;
+  }
+  
+  .order-form input, .order-form button {
+    padding: 16px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .order-form button {
+    background-color: #00382a;;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .order-form button:disabled {
+    background-color: #ccc;
+  }
+  
+  .orders-table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+  
+  .orders-table th, .orders-table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 16px;
+    font-weight: 500;
+  }
+  
+  .orders-table th {
+    background-color: #00382a;;
+    color: white;
+  }
+  .table-action-btn{
+    padding: 8px 12px;
+  }
+  .orders-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .orders-table tr:hover {
+    background-color: #ddd;
+  }

@@ -1,0 +1,94 @@
+/* BuyTokens.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.buy-tokens-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+/* Header */
+.buy-tokens-container h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Wallet Address */
+.wallet-address {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+/* Token Price */
+.token-price {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Input Field */
+.input-amount {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Buttons */
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Connect Wallet Button */
+.connect-wallet-btn {
+    background: #4caf50;
+    color: white;
+}
+
+.connect-wallet-btn:hover {
+    background: #45a049;
+}
+
+/* Buy Button */
+.buy-token-btn {
+    background: #007bff;
+    color: white;
+}
+
+.buy-token-btn:hover {
+    background: #0056b3;
+}
+
+/* Disabled Button */
+.disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}

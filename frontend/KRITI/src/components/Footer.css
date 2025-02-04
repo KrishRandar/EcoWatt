@@ -1,0 +1,75 @@
+/* Footer Container */
+.footer-container {
+    width: 100%;  
+}
+
+/* Banner Section */
+.footer-banner {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #dcf7b3;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.message-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #2f3e46;
+}
+
+.message-icon {
+    font-size: 1.125rem;
+    color: #2f3e46;
+}
+
+/* Copyright Section */
+.footer-copyright {
+    background-color: #00382a;
+    color: white;
+    padding: 2rem;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.brand-icon {
+    font-size: 1.875rem;
+}
+
+.brand-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+.copyright-text {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+    .footer-copyright {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-copyright {
+        padding: 1rem 2rem;
+    }
+}

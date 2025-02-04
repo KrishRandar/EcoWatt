@@ -1,0 +1,56 @@
+/* Navbar Container */
+.navbar-container {
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem 2rem ;
+    max-width: 100%;
+  }
+  
+  .navbar-content {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo Styles */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    color: #e5e5e5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #93c5fd;
+  }
+  
+  /* Wallet Button */
+  .wallet-button {
+    background-color: #22c55e;
+    color: white;
+    padding: 12px;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .wallet-button:hover {
+    background-color: #16a34a;
+  }

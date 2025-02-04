@@ -1,0 +1,166 @@
+/* Base Styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Hero Section */
+.hero-content {
+  margin: 80px 0 64px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #2f3e46;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+.highlight-text {
+  background-color: #eaffc8;
+  border-radius: 999px;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.hero-subtext {
+  color: #6b7280;
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cards Section */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+.card {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-radius: 8px;
+  border-bottom: 5px solid #009973;;
+  width: 100%;
+  max-width: 500px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.card-header {
+  color: #374151;
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.card-icon.rotate-270 {
+  transform: rotate(-90deg);
+}
+
+.card-title {
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.card-description {
+  color: #6b7280;
+  margin: 16px 0;
+  font-size: 1.125rem;
+}
+
+/* Buttons */
+.card-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 50px;
+  border-radius: 999px;
+  background-color: white;
+  /* padding: 0 8px; */
+  text-decoration: none;
+}
+
+.button-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #2f3e46;
+  padding: 0 20px;
+}
+
+.button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 20%;
+  border-radius: 999px;
+  background-color: #00382a;;
+  padding: 8px;
+}
+
+.button-icon svg {
+  color: white;
+  font-size: 1.125rem;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .hero-heading {
+    font-size: 3.75rem;
+  }
+  
+  .hero-subtext {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-heading {
+    font-size: 4.5rem;
+  }
+  
+  .card {
+    width: 45%;
+  }
+}

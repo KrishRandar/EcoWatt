@@ -1,0 +1,74 @@
+/* Center the container on the page */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+/* Styling for the form box */
+.addressBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the heading */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Input fields */
+.addressInput {
+  width: 300px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+/* Buttons */
+.locationButton, .confirmButton {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.locationButton {
+  background-color: olive;
+  color: white;
+}
+
+.locationButton:hover {
+  background-color: darkolivegreen;
+}
+
+.confirmButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.confirmButton:hover {
+  background-color: #218838;
+}

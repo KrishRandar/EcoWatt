@@ -1,0 +1,233 @@
+:root {
+  --primary-green: #2B5D3E;
+  --secondary-green: #4A7856;
+  --accent-green: #8BA888;
+  --neutral-beige: #F5F0E6;
+  --earth-brown: #6D4C3D;
+  --sky-blue: #87CEEB;
+  --error-red: #D32F2F;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-size: cover;
+}
+
+/* Container */
+.cc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+
+.cc-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  padding: 1rem 2rem;
+  background: var(--primary-green);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cc-nav-button {
+  background: white;
+  color: var(--primary-green);
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
+}
+
+.cc-nav-button:hover {
+  background-color: var(--neutral-beige);
+  transform: translateY(-2px);
+}
+
+/* Content Sections */
+.cc-content {
+  display: grid;
+  gap: 2rem;
+  margin-top: 80px;
+}
+
+.cc-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(139, 174, 136, 0.15);
+}
+
+.cc-section h2 {
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.cc-section h2::before {
+  content: '🌱';
+  font-size: 1.5rem;
+}
+
+/* Form Styles */
+.cc-form-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input[type="number"],
+input[type="text"] {
+  padding: 0.8rem;
+  border: 1px solid var(--accent-green);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--secondary-green);
+  box-shadow: 0 0 0 3px rgba(74, 120, 86, 0.1);
+}
+
+/* Button Styles */
+.cc-primary-button {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.cc-primary-button:hover {
+  background-color: var(--secondary-green);
+  transform: translateY(-2px);
+}
+
+.cc-danger-button {
+  background-color: var(--error-red);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cc-danger-button :hover {
+  background-color: var(--error-red);
+  
+}
+
+.cc-success-button {
+  background-color: var(--secondary-green);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Table Styles */
+.cc-auction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cc-auction-table th,
+.cc-auction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(139, 168, 136, 0.1);
+}
+
+.cc-auction-table th {
+  background-color: var(--primary-green);
+  color: white;
+  font-weight: 600;
+}
+
+.cc-auction-table tr:nth-child(even) {
+  background-color: rgba(139, 168, 136, 0.05);
+}
+
+.cc-auction-table tr:hover {
+  background-color: rgba(139, 168, 136, 0.08);
+}
+
+/* Bid Input Group */
+.cc-bid-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cc-bid-input-group input {
+  flex: 1;
+  max-width: 120px;
+  padding: 0.5rem;
+}
+
+/* Error Message */
+.cc-error-message {
+  color: var(--error-red);
+  padding: 1rem;
+  margin-top: 1rem;
+  background: rgba(211, 47, 47, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cc-error-message::before {
+  content: '⚠';
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cc-container {
+    padding: 10px;
+  }
+
+  .cc-section {
+    padding: 1rem;
+  }
+
+  .cc-form-group {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-auction-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .cc-navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
