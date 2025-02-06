@@ -12,17 +12,22 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+  /* background: url('../assets/bg.jpg') no-repeat center center fixed; */
   background-size: cover;
+  /* color: var(--primary-green); */
 }
 
 /* Container */
 .cc-container {
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 100vh;
+  padding: 20px;
 }
 
+/* Navbar Styles */
 
+
+/* Navbar Styles */
 .cc-navbar {
   position: fixed;
   top: 0;
@@ -30,7 +35,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end; 
+  justify-content: flex-end; /* Align items to the left */
   padding: 1rem 2rem;
   background: var(--primary-green);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);

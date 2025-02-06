@@ -1,3 +1,24 @@
+// // Updated Home.jsx
+// import React from "react";
+// import "./Home.css";
+
+// function Home() {
+//   return (
+//     <div className="home-container bg-yellow-400 text-3xl">
+//       <section className="motto">
+//         <h1 className="text-red-500">Empowering Sustainability with Web3</h1>
+//         <p>Join us in revolutionizing energy conservation through blockchain technology.</p>
+//       </section>
+
+//       <section className="links-section">
+//         <a href="/peer-to-peer" className="link-box">Peer-to-Peer Trading</a>
+//         <a href="/carbon-credits" className="link-box">Carbon Credit Marketplace</a>
+//       </section>
+//     </div>
+//   );
+// }
+
+// export default Home;
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
@@ -64,5 +85,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

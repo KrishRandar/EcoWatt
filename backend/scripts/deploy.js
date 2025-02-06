@@ -27,6 +27,15 @@ async function main() {
 	await energyTrading.deployed();
 	console.log('EnergyTrading deployed at:', energyTrading.address);
 
+	const minBidPricePerEnt = ethers.BigNumber.from('100');
+	const EnergyBid = await ethers.getContractFactory('BiddingContract');
+	const energyBid = await EnergyBid.deploy(
+		energyToken.address,
+		minBidPricePerEnt
+	);
+	await energyBid.deployed();
+	console.log('EnergyTrading deployed at:', energyBid.address);
+
 	// 3. Distribute initial EnergyToken supply (in wei) to all available accounts
 	const initialENTAmount = ethers.BigNumber.from('10000'); // 10,000 wei per account
 	for (let i = 0; i < accounts.length; i++) {

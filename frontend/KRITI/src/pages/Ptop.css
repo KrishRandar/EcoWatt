@@ -1,4 +1,207 @@
-body{
+/*body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background-color: #1B5E20; /* Changed to dark green */
+   /* padding: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-home {
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 6rem auto 2rem;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.trade-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.trade-section:hover {
+    transform: translateY(-2px);
+}
+
+h2 {
+    color: #1B5E20; /* Changed to dark green */
+ /*   margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e8eaf6;
+    padding-bottom: 0.5rem;
+}
+
+.order-form {
+    margin-bottom: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50; /* Changed to medium green */
+ /*   box-shadow: 0 0 0 3px rgba(76,175,80,0.1); /* Green tint */
+/*}
+
+button {
+    background-color: #2E7D32; /* Changed to medium green */
+ /*   color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+button:hover {
+   
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.orders-container {
+    flex: 1;
+    margin-top: 1.5rem;
+}
+
+.orders-container h3 {
+    color: #2E7D32; /* Medium green */
+ /*   font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.orders-table {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #E8F5E9; /* Light green hover */
+/*}
+
+.orders-table button {
+    background-color: #d32f2f;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.orders-table button:hover {
+    background-color: #c62828;
+}
+
+.past-orders-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.filter-container {
+    margin: 1rem 0;
+}
+
+.filter-container select {
+    padding: 0.6rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 1rem;
+    color: #333;
+}
+
+.status {
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.status.cancelled {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.status.expired {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        margin-top: 5rem;
+        padding: 0 1rem;
+    }
+    
+    .trade-section {
+        padding: 1.5rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}*/
+/*body{
     font-family: 'Inter', sans-serif;
 }
 .energy-trading {
@@ -64,4 +267,189 @@ body{
   
   .orders-table tr:hover {
     background-color: #ddd;
+  }*/
+  :root {
+    --primary-green: #2B5D3E;
+    --secondary-green: #4A7856;
+    --accent-green: #8BA888;
+    --neutral-beige: #F5F0E6;
+    --earth-brown: #6D4C3D;
+    --sky-blue: #87CEEB;
+    --error-red: #D32F2F;
   }
+  
+  /* Global Styles */
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-size: cover;
+  }
+  
+  /* Container */
+  .energy-trading {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Balance Display */
+  .balance-display {
+    background: var(--primary-green);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  /* Trade Sections */
+  .trade-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(139, 174, 136, 0.15);
+    margin-bottom: 2rem;
+  }
+  
+  .trade-section h2 {
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .trade-section h2::before {
+    content: '🌱';
+    font-size: 1.5rem;
+  }
+  
+  /* Form Styles */
+  .order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input[type="number"],
+  input[type="text"] {
+    padding: 0.8rem;
+    border: 1px solid var(--accent-green);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="number"]:focus,
+  input[type="text"]:focus {
+    outline: none;
+    border-color: var(--secondary-green);
+    box-shadow: 0 0 0 3px rgba(74, 120, 86, 0.1);
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-green);
+    transform: translateY(-2px);
+  }
+  
+  /* Order Table */
+  .orders-container {
+    margin-top: 2rem;
+  }
+  
+  .orders-container h3 {
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(139, 168, 136, 0.1);
+  }
+  
+  th {
+    background-color: var(--primary-green);
+    color: white;
+    font-weight: 600;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(139, 168, 136, 0.05);
+  }
+  
+  tr:hover {
+    background-color: rgba(139, 168, 136, 0.08);
+  }
+  
+  /* Buy Input Group */
+  .buy-input-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .buy-input-group input {
+    flex: 1;
+    max-width: 120px;
+    padding: 0.5rem;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: var(--error-red);
+    padding: 1rem;
+    margin-top: 1rem;
+    background: rgba(211, 47, 47, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .error-message::before {
+    content: '⚠';
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .energy-trading {
+      padding: 10px;
+    }
+  
+    .trade-section {
+      padding: 1rem;
+    }
+  
+    .order-form {
+      flex-direction: column;
+    }
+  
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+  

@@ -14,125 +14,26 @@
 		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": true,
-				"internalType": "uint256",
-				"name": "bidId",
-				"type": "uint256"
-			},
-			{
-				"indexed": true,
+				"indexed": false,
 				"internalType": "uint256",
 				"name": "orderId",
 				"type": "uint256"
-			},
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "buyer",
-				"type": "address"
-			},
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "amount",
-				"type": "uint256"
-			},
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "bidPrice",
-				"type": "uint256"
-			},
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "fee",
-				"type": "uint256"
 			}
 		],
-		"name": "BidAccepted",
+		"name": "OrderCancelled",
 		"type": "event"
 	},
 	{
 		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": true,
-				"internalType": "uint256",
-				"name": "bidId",
-				"type": "uint256"
-			}
-		],
-		"name": "BidCancelled",
-		"type": "event"
-	},
-	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": true,
-				"internalType": "uint256",
-				"name": "bidId",
-				"type": "uint256"
-			},
-			{
-				"indexed": true,
+				"indexed": false,
 				"internalType": "uint256",
 				"name": "orderId",
 				"type": "uint256"
 			},
 			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "buyer",
-				"type": "address"
-			},
-			{
 				"indexed": false,
-				"internalType": "uint256",
-				"name": "amount",
-				"type": "uint256"
-			},
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "bidPrice",
-				"type": "uint256"
-			},
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "fee",
-				"type": "uint256"
-			}
-		],
-		"name": "BidPlaced",
-		"type": "event"
-	},
-	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": true,
-				"internalType": "uint256",
-				"name": "orderId",
-				"type": "uint256"
-			}
-		],
-		"name": "SellOrderCancelled",
-		"type": "event"
-	},
-	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": true,
-				"internalType": "uint256",
-				"name": "orderId",
-				"type": "uint256"
-			},
-			{
-				"indexed": true,
 				"internalType": "address",
 				"name": "seller",
 				"type": "address"
@@ -146,7 +47,7 @@
 			{
 				"indexed": false,
 				"internalType": "uint256",
-				"name": "pricePerUnit",
+				"name": "price",
 				"type": "uint256"
 			},
 			{
@@ -156,26 +57,26 @@
 				"type": "string"
 			}
 		],
-		"name": "SellOrderCreated",
+		"name": "OrderCreated",
 		"type": "event"
 	},
 	{
 		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": true,
+				"indexed": false,
 				"internalType": "uint256",
 				"name": "tradeId",
 				"type": "uint256"
 			},
 			{
-				"indexed": true,
+				"indexed": false,
 				"internalType": "uint256",
 				"name": "orderId",
 				"type": "uint256"
 			},
 			{
-				"indexed": true,
+				"indexed": false,
 				"internalType": "address",
 				"name": "buyer",
 				"type": "address"
@@ -197,43 +98,7 @@
 		"type": "event"
 	},
 	{
-		"inputs": [],
-		"name": "bidCounter",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "bids",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "bidId",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "orderId",
-				"type": "uint256"
-			},
-			{
-				"internalType": "address",
-				"name": "buyer",
-				"type": "address"
-			},
 			{
 				"internalType": "uint256",
 				"name": "amount",
@@ -241,40 +106,18 @@
 			},
 			{
 				"internalType": "uint256",
-				"name": "bidPrice",
+				"name": "pricePerUnitInWei",
 				"type": "uint256"
 			},
 			{
-				"internalType": "uint256",
-				"name": "fee",
-				"type": "uint256"
-			},
-			{
-				"internalType": "bool",
-				"name": "active",
-				"type": "bool"
+				"internalType": "string",
+				"name": "geohash",
+				"type": "string"
 			}
 		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "buyerDailyPurchase",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
+		"name": "CreateSellOrder",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -293,42 +136,12 @@
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "amount",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "pricePerUnitInWei",
-				"type": "uint256"
-			},
-			{
-				"internalType": "string",
-				"name": "geohash",
-				"type": "string"
-			}
-		],
-		"name": "createSellOrder",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "dailyBuyingLimit",
-		"outputs": [
-			{
-				"internalType": "uint256",
+				"internalType": "address",
 				"name": "",
-				"type": "uint256"
+				"type": "address"
 			}
 		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "dayStart",
+		"name": "energyBalance",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -377,19 +190,6 @@
 	},
 	{
 		"inputs": [],
-		"name": "getCurrentPhase",
-		"outputs": [
-			{
-				"internalType": "uint8",
-				"name": "",
-				"type": "uint8"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
 		"name": "getListOfActiveSellOrdersForMe",
 		"outputs": [
 			{
@@ -421,7 +221,7 @@
 					},
 					{
 						"internalType": "bool",
-						"name": "cancelled",
+						"name": "cancel",
 						"type": "bool"
 					},
 					{
@@ -476,7 +276,7 @@
 					},
 					{
 						"internalType": "bool",
-						"name": "cancelled",
+						"name": "cancel",
 						"type": "bool"
 					},
 					{
@@ -501,30 +301,6 @@
 	{
 		"inputs": [],
 		"name": "lastDaySellOrderId",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "orderBids",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -598,7 +374,7 @@
 			},
 			{
 				"internalType": "bool",
-				"name": "cancelled",
+				"name": "cancel",
 				"type": "bool"
 			},
 			{
@@ -608,32 +384,6 @@
 			}
 		],
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_limit",
-				"type": "uint256"
-			}
-		],
-		"name": "setDailyBuyingLimit",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_dayStart",
-				"type": "uint256"
-			}
-		],
-		"name": "setDayStart",
-		"outputs": [],
-		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
