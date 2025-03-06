@@ -13,7 +13,7 @@ To address these issues, we’re introducing a **decentralized Peer-to-Peer (P2P
 To get started, clone the GitHub repository:
 
 ```bash
-git clone https://github.com/Kriti2025.git
+git clone https://github.com/KrishRandar/EcoWatt
 ```
 
 ```bash
