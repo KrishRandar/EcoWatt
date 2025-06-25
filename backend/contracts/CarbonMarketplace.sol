@@ -56,7 +56,7 @@ contract AuctionDApp is Ownable {
 
         emit AuctionCreated(auctionIdCounter, msg.sender, _tokenAmount, _basePrice, endTime);
     }
-
+//all good till here 
     function placeBid(uint256 _auctionId) external payable {
         Auction storage auction = auctions[_auctionId];
         require(block.timestamp <= auction.endTime, "Auction has ended");
