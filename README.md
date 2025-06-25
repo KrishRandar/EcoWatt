@@ -125,9 +125,7 @@ npm run dev
 
 ## Overview
 
-This document describes how we use an IoT-enabled ESP32 device to monitor the leftover battery storage capacity of a buyer before processing their buy order for energy trading.
-
-Our system ensures that buyers can only place orders if they have sufficient battery capacity to store the purchased energy. The ESP32 IoT device reports real-time battery storage data to our backend server before an order is processed.
+This document outlines our use of an IoT-enabled ESP32 device to monitor a buyer’s remaining battery storage before processing energy trading orders. The system ensures buyers can only place orders if they have sufficient capacity to store the incoming energy, with the ESP32 continuously reporting real-time storage data to the backend server prior to order approval.
 
 ---
 
