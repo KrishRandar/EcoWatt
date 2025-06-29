@@ -15,7 +15,6 @@ To get started, clone the GitHub repository:
 ```bash
 git clone https://github.com/KrishRandar/EcoWatt
 ```
-
 ```bash
 cd backend
 ```
